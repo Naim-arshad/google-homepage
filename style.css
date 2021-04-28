@@ -1,0 +1,55 @@
+#item1{background-color: rebeccapurple;}
+#item2{background-color: palegoldenrod;}
+#item3{background-color: saddlebrown;}
+#item4{background-color: aqua;}
+#item5{background-color: teal;}
+header {
+    height: 50px;
+}
+main {
+    background-color: lightgrey;
+    display: grid;
+    min-height: 80vh;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+#logo-google {
+    width: 280px;
+    height: 90px;
+}
+#search-input {
+    width: 500px;
+    height: 40px;
+}
+#container-logo {
+    background-color: lightseagreen;
+    grid-area: 2/2/3/4;
+    justify-self: center;
+    align-self: center;
+}
+#container-search {
+    background-color: lightsalmon;
+    grid-area: 3/2/4/4;
+    justify-self: center;
+}
+input:focus, textarea {
+    outline: none;
+}
+#g-button {
+    background-color: limegreen;
+    display: grid;
+    min-height: 70px;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+    grid-gap: 10px;
+}
+
+.btn-homeP {
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
+}
+#btn-search {
+    justify-self: flex-end;
+}
