@@ -1,80 +1,64 @@
-
-input[type="text"]{
-    font-size: 17px;
+/* Base css */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+#container-FrontPage {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
 }
 header {
-    height: 50px;
+    flex: O 1 auto;
 }
 main {
-    display: grid;
-    min-height: 80vh;
-    width: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    flex: 1 1 auto;
+    background-color: lightgray;
 }
-#logo-google {
-    width: 280px;
-    height: 90px;
+footer {
+    flex: 0 1 40px;
+    border: 1px solid greenyellow;
 }
-
-#container-searchbar{
-    display: grid;
-    grid-template-columns: 40px 600px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border: solid 1px lightgray;
+/* End base*/
+/* Header */
+nav {
+    height:60px;
+    display: flex;
+    justify-content: flex-end;
 }
-#search-input {
-    width: 555px;
-    height: 40px;
-    border: none;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    
+.container-link-h {
+    align-self: center;
+    margin-right: 10px;
 }
-#label-icon-search {
-    width: 40px;
-    height: 40px;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-}
-#icon-search {
-    width: 20px;
+#h-img-app {
+    width: 25px;
     height: auto;
 }
-#container-logo {
-    grid-area: 2/2/3/4;
-    justify-self: center;
-    align-self: center;
+.container-link-h.app{
+    margin-left: 10px;
+    padding: 8px;
+    border-radius: 50%;
 }
-#container-search {
-    grid-area: 3/2/4/4;
-    justify-self: center;
-    width: 600px;
-}
-input:focus, textarea {
-    outline: none;
-}
-#g-button {
-    display: grid;
-    min-height: 40px;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 20px;
-    grid-gap: 10px;
-}
-
-.btn-homeP {
-    width: 150px;
-    height: 40px;
+#btn-h-sign {
+    padding: 9px 27px 9px 27px;
     font-size: 15px;
     border: none;
-    background-color: rgb(248,249,250);
+    border-radius: 5px;
+    background-color: rgb(56, 113, 224);
+    color: white;
 }
-#btn-search {
-    justify-self: flex-end;
+.gmail ,.images{
+    text-decoration: none;
+    color: black;
 }
+#btn-h-sign:hover{
+    cursor: pointer;
+    background-color: rgb(67, 123, 226);
+}
+.container-link-h.app:hover{
+    background-color:rgb(240,240,240);
+}
+.link-h.gmail:hover, .link-h.images:hover {
+    text-decoration: underline;
+}
+/* End header */
