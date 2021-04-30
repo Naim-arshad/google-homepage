@@ -8,16 +8,12 @@ html, body {
     flex-flow: column;
     height: 100%;
 }
-header {
-    flex: O 1 auto;
-}
+
 main {
     flex: 1 1 auto;
-    background-color: lightgray;
 }
 footer {
-    flex: 0 1 40px;
-    border: 1px solid greenyellow;
+    flex: 0 1 94px;
 }
 /* End base*/
 /* Header */
@@ -62,3 +58,112 @@ nav {
     text-decoration: underline;
 }
 /* End header */
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#img-main-logo {
+    width: 272px;
+    height: auto;
+}
+#form-search-bar {
+    display:flex;
+    flex-flow:column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+}
+#label-search-bar {
+    display:flex;
+    flex-flow: row;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 25px;
+    padding: 5px 20px 5px 20px;
+}
+#img-search-bar {
+    width: 20px;
+    height: 20px;
+    margin-right: 13px;
+}
+#search-bar {
+    width: 487px;
+    height: 34px;
+    border:none;
+    font-size: 20px;
+}
+#search-bar:focus {
+    outline:none;
+}
+#label-search-bar:hover,
+#label-search-bar:focus {
+    box-shadow: 0px 1px 5px lightgray;
+}
+.container-btn-search {
+    padding-top: 18px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+#btn-search-search, #btn-search-lucky {
+    background-color: rgb(248,249,250);
+    border: none;
+    width: 130px;
+    height: 40px;
+    padding: 0px 0px 0px 0px;
+    font-size: 14px;
+    margin: 11px 4px 11px 4px;
+    border-radius: 5px;
+}
+#btn-search-search:hover, 
+#btn-search-lucky:hover {
+    border: 1px solid rgb(220, 220, 220);
+    box-shadow: 0px 2px lightgray;
+}
+.p-main-lang {
+    font-size: 15px;
+}
+
+.p-main-lang a {
+    text-decoration: none;
+    color: rgb(30, 20, 169);
+    margin: 0px 3px 0px 3px
+}
+.p-main-lang a:hover {
+    text-decoration: underline;
+}
+/* End Main */
+/* Footer */
+footer {
+    background-color: rgb(240,240,240);
+    display: flex;
+    flex-flow: column;
+}
+.div-footer {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+.link-footer {
+    border-top: 1px solid rgb(218, 220, 224);
+}
+#p-f-country{
+    margin: 0px 30px 0px 30px;
+}
+.link-f {
+    text-decoration: none;
+    padding: 15px;
+}
+.link-f.about {
+    padding-left: 30px;
+}
+#p-f-country, .link-f {
+    color: rgb(100, 100, 100);
+}
+#link-f-float-right{
+    margin-left: auto;
+}
